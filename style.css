@@ -16,7 +16,7 @@
 }
 
 .top-content {
-  margin-bottom: 80px;
+  margin-bottom: 35px;
 
   padding-left: 50px;
   padding-right: 50px;
@@ -79,7 +79,7 @@ h1 {
 }
 
 .about-me {
-  min-height: 325px;
+  min-height: 350px;
 
   padding-top: 40px;
   padding-right: 40px;
@@ -100,7 +100,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
 
-  margin-top: 15px;
+  margin-top: 30px;
 
   gap: 15px;
 }
@@ -111,6 +111,63 @@ h1 {
 
 h2 {
   font-size: 2em;
+
+  margin-bottom: -30px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 260px;
+
+  margin-top: 35px;
+
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.card > .placeholder-img {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  background-color: rgb(85, 95, 100);
+  color: #fff;
+
+  text-align: center;
+}
+
+.project-info {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.project-info > .info-header {
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-btns > img,
+.header-btns > svg {
+  width: 25px;
+}
+
+.project-info > .info-text {
+  width: 200px;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 1200px) {
