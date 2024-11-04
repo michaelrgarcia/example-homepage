@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", ui-sans-serif;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  overflow-y: clip;
+}
+
+.top-content,
+.my-work {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.top-content {
+  margin-bottom: 80px;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  position: relative;
+}
+
+.tilted-background {
+  width: 200%;
+  height: 150%;
+
+  margin-left: -500px;
+  margin-top: -600px; /* just change this on each media query */
+
+  position: absolute;
+
+  transform: rotate(-10deg);
+  z-index: -1;
+
+  background-color: cadetblue;
+
+  box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.6);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+.pic-container {
+  height: 100%;
+
+  position: relative;
+}
+
+.pic-container img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+  position: absolute;
+
+  width: 100%;
+  margin-top: -90px;
+
+  text-align: center;
+
+  font-size: 3.5em;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.about-me {
+  min-height: 325px;
+
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 20px;
+
+  box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+  background-color: #ffffff;
+}
+
+.about-me > p {
+  min-height: 190px;
+
+  font-size: 1.2em;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 15px;
+
+  gap: 15px;
+}
+
+.socials img {
+  width: 30px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .tilted-background {
+    margin-left: -200px;
+    margin-top: -550px;
+    transform: rotate(-15deg);
+  }
+}
